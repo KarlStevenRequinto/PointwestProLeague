@@ -1,6 +1,5 @@
 package pointwestproleague.pointwestpowerhouse.service;
 
-import java.nio.file.attribute.UserPrincipalNotFoundException;
 import java.util.List;
 import java.util.UUID;
 

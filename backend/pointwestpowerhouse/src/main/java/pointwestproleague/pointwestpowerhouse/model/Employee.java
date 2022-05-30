@@ -11,6 +11,7 @@ import javax.persistence.Id;
 // to make sure that this class will be mapped to a database = @Entity
 @Entity
 public class Employee implements Serializable {
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(nullable = false, updatable = false)
@@ -21,10 +22,11 @@ public class Employee implements Serializable {
 	private String imageUrl;
 	private String specialSkill;
 	private String employeeCode;
-
+	
+	public Employee() {}
+	
 //	CONSTRUCTORS
 	public Employee(Integer id, Integer mmr, String name, String alias, String imageUrl, String specialSkill, String employeeCode) {
-		super();
 		this.id = id;
 		this.mmr = mmr;
 		this.name = name;
